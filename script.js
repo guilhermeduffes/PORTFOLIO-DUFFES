@@ -1,10 +1,10 @@
 const textDisplay2 = document.getElementById('typewriter')
 const frases = ['Hey! Im Duffes.']
 
-var liNavBar = document.querySelectorAll('.navBar')
-var hoverSound = document.getElementById('hoverNav')
-var playBtn = document.getElementById('play')
-var heartbeat = document.getElementById('heartbeat')
+// var liNavBar = document.querySelectorAll('.navBar')
+// var hoverSound = document.getElementById('hoverNav')
+// var playBtn = document.getElementById('play')
+// var heartbeat = document.getElementById('heartbeat')
 
 var i = 0
 var j = 0
@@ -63,21 +63,21 @@ liNavBar.forEach(li => {
   }, false);
 });
 
-liNavBar.forEach(li => {
-  li.addEventListener('mouseleave', event => {
-    hoverSound.pause();
-    hoverSound.currentTime = 0;
-  }, false);
-});
+// liNavBar.forEach(li => {
+//   li.addEventListener('mouseleave', event => {
+//     hoverSound.pause();
+//     hoverSound.currentTime = 0;
+//   }, false);
+// });
 
 
 
-playBtn.addEventListener('mouseover', function () {
-  heartbeat.play();
+// playBtn.addEventListener('mouseover', function () {
+//   heartbeat.play();
 
-}, false);
+// }, false);
 
-playBtn.addEventListener('mouseleave', function () {
-  heartbeat.pause();
-  heartbeat.currentTime = 0;
-}, false);
+// playBtn.addEventListener('mouseleave', function () {
+//   heartbeat.pause();
+//   heartbeat.currentTime = 0;
+// }, false);

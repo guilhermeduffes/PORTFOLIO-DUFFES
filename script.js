@@ -1,13 +1,20 @@
 const textDisplay2 = document.getElementById('typewriter')
 const frases = ['Hey! Im Duffes.']
 
+var liNavBar = document.querySelectorAll('.navBar')
+var hoverSound = document.getElementById('hoverNav')
+var playBtn = document.getElementById('play')
+var heartbeat = document.getElementById('heartbeat')
+
 var i = 0
-var j = 0 
+var j = 0
 var frases2 = []
 var final = false
 var fim = false
 
-function loop () {
+AOS.init();
+
+function loop() {
   fim = false
   textDisplay2.innerHTML = frases2.join('')
 
@@ -19,7 +26,7 @@ function loop () {
       textDisplay2.innerHTML = frases2.join('')
     }
 
-    if(final && j <= frases[i].length) {
+    if (final && j <= frases[i].length) {
       frases2.pop(frases[i][j])
       j--
       textDisplay2.innerHTML = frases2.join('')
@@ -39,44 +46,38 @@ function loop () {
       }
     }
   }
-  const spedUp = Math.random() * (80 -50) + 50
-  const normalSpeed = Math.random() * (300 -200) + 200
+  const spedUp = Math.random() * (80 - 50) + 50
+  const normalSpeed = Math.random() * (300 - 200) + 200
   const time = fim ? 2000 : final ? spedUp : normalSpeed
   setTimeout(loop, time)
 }
 
 // loop()
 
-var playBtn2 = document.getElementById('play2'),
-  heartbeat2 = document.getElementById('heartbeat2')
 
-playBtn2.addEventListener('mouseover', function() {
-  heartbeat2.play(); 
+
+liNavBar.forEach(li => {
+  li.addEventListener('mouseover', event => {
+    hoverSound.play();
+
+  }, false);
+});
+
+liNavBar.forEach(li => {
+  li.addEventListener('mouseleave', event => {
+    hoverSound.pause();
+    hoverSound.currentTime = 0;
+  }, false);
+});
+
+
+
+playBtn.addEventListener('mouseover', function () {
+  heartbeat.play();
 
 }, false);
 
-playBtn2.addEventListener('mouseleave', function() {
-  heartbeat2.pause();
-  heartbeat2.currentTime = 0;
-
-}, false);
-
-
-var playBtn = document.getElementById('play'),
-  heartbeat = document.getElementById('heartbeat');
-
-playBtn.addEventListener('mouseover', function() {
-  heartbeat.play(); 
-
-}, false);
-
-playBtn.addEventListener('mouseleave', function() {
+playBtn.addEventListener('mouseleave', function () {
   heartbeat.pause();
   heartbeat.currentTime = 0;
-
 }, false);
-
-
-
-
-

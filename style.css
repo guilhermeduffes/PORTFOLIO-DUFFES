@@ -1,22 +1,23 @@
 @font-face {
     font-family: origintech;
-    src: url(fonts/OriginTech\ personal\ use.ttf);
+    src: url(/assets/fonts/OriginTech\ personal\ use.ttf);
 }
 
 @font-face {
     font-family: planetkosmos;
-    src: url(fonts/planetkosmos.TTF);
+    src: url(/assets/fonts/planetkosmos.TTF);
 }
 
 @font-face {
     font-family: spaceage;
-    src: url(fonts/spaceage.ttf);
+    src: url(/assets/fonts/spaceage.ttf);
 }
 
 @font-face {
     font-family: tourner;
-    src: url(fonts/Tourner.ttf);
+    src: url(/assets/fonts/Tourner.ttf);
 }
+
 
 * {
     margin: 0;
@@ -30,12 +31,9 @@ body {
     scroll-behavior: smooth;
 }
 
-@font-face {
-    font-family: tura;
-    src: url(fonts/CeraMedium.otf);
-}
 
-.menu{
+
+.menu {
     display: flex;
 }
 
@@ -169,35 +167,30 @@ main {
 
 .imagemFundo {
     width: 100%;
-    height: 1600px;
+    height: 1850px;
     /* border: 1px solid red; */
-    background-image: url(assets/backimg.jpg);
+    background-image: url(assets/imgs/backimg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.janelaVidro {
-    color: white;
-}
+
 
 
 /* SECTION */
 
 .paiJanelas {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .janelaVidro {
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    color: whitesmoke;
     border-radius: 25px;
-    padding-right: 250px;
-    padding-top: 35px;
+    padding: 15px;
     text-align: center;
     width: 450px;
     height: 200px;
@@ -207,20 +200,38 @@ main {
     -webkite-backdrop-filter: blur(11px);
 }
 
-#janelaPrimeira1 {
-    margin-left: 250px;
+.p1Janela {
+    width: 35%;
+    /* border:1px solid red; */
     display: flex;
+    align-items: center;
     justify-content: center;
+
+}
+
+.p2Janela {
+    width: 60%;
+    /* border:1px solid green; */
+    text-align: left;
+    
+}
+
+
+#janelaPrimeira1 {
+    margin-left: 300px;
 }
 
 #janelaPrimeira2 {
-    margin-right: 250px;
+    margin-right: 300px;
+    
 }
 
 #janelaPrimeira3 {
-    margin-left: 250px;
+    margin-left: 300px;
+    
 }
 
 #janelaPrimeira4 {
-    margin-right: 250px;
+    margin-right: 300px;
+    
 }

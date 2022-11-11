@@ -9,13 +9,14 @@
     <meta name="keywords" content="webdesign; developer; ">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Tura</title>
 </head>
 
 <body>
-    
+
     <audio id="heartbeat" src="assets/sounds/Tick - Sound Effect (HD).mp3" preload="auto"></audio>
-    
+
     <header>
         <h3 id="tura1">DUFFES</h3>
         <nav class="menu">
@@ -24,7 +25,7 @@
                 <li class="navBar"><a href="#">Home</a></li>
                 <li class="navBar"><a href="#">About us</a></li>
                 <li class="navBar"><a href="#">Services</a></li>
-                <li class="navBar"><a href="#">Projects</a></li>
+                <li class="navBar"><a href="#projetos">Projects</a></li>
                 <li class="navBar"><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -36,47 +37,81 @@
         </div>
         <button id="play" class="button"> <a id="butaomeio" href="#">FALE CONOSCO!</a> </button><br>
 
-        <div class="imagemFundo"></div>
+        <div class="imagemFundo" data-value="6"></div>
     </main>
     <section>
         <div class="paiJanelas">
             <div data-aos="fade-left" id="janelaPrimeira1" class="janelaVidro">
-                <div class="p1Janela" ><img src="assets/svgs/web-design.svg" alt=""></div>
-                <div class="p2Janela" > 
+                <div class="p1Janela"><img src="assets/svgs/web-design.svg" alt=""></div>
+                <div class="p2Janela">
                     <h1>Web Design</h1>
                     <br>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, neque omnis libero eveniet facere voluptatem expedita inventore earum sit repellat animi ullam aspernatur hic non excepturi esse rerum quos consectetur!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, neque omnis libero eveniet facere
+                        voluptatem expedita inventore earum sit repellat animi ullam aspernatur hic non excepturi esse
+                        rerum quos consectetur!</p>
                 </div>
             </div>
             <div data-aos="fade-right" id="janelaPrimeira2" class="janelaVidro">
-                <div class="p1Janela" ><img src="assets/svgs/responsividade.svg" alt=""></div>
-                <div class="p2Janela" > 
+                <div class="p1Janela"><img src="assets/svgs/responsividade.svg" alt=""></div>
+                <div class="p2Janela">
                     <h1>Responsividade</h1>
                     <br>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, neque omnis libero eveniet facere voluptatem expedita inventore earum sit repellat animi ullam aspernatur hic non excepturi esse rerum quos consectetur!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, neque omnis libero eveniet facere
+                        voluptatem expedita inventore earum sit repellat animi ullam aspernatur hic non excepturi esse
+                        rerum quos consectetur!</p>
                 </div>
             </div>
             <div data-aos="fade-left" id="janelaPrimeira3" class="janelaVidro">
-                <div class="p1Janela" ><img src="assets/svgs/SEO.svg" alt=""></div>
-                <div class="p2Janela" > 
+                <div class="p1Janela"><img src="assets/svgs/SEO.svg" alt=""></div>
+                <div class="p2Janela">
                     <h1>SEO</h1>
                     <br>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, neque omnis libero eveniet facere voluptatem expedita inventore earum sit repellat animi ullam aspernatur hic non excepturi esse rerum quos consectetur!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, neque omnis libero eveniet facere
+                        voluptatem expedita inventore earum sit repellat animi ullam aspernatur hic non excepturi esse
+                        rerum quos consectetur!</p>
                 </div>
             </div>
             <div data-aos="fade-right" id="janelaPrimeira4" class="janelaVidro">
-                <div class="p1Janela" ><img src="assets/svgs/defesa-cibernetica.svg" alt=""></div>
-                <div class="p2Janela" > 
+                <div class="p1Janela"><img src="assets/svgs/defesa-cibernetica.svg" alt=""></div>
+                <div class="p2Janela">
                     <h1>Defesa Cibernética</h1>
                     <br>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, neque omnis libero eveniet facere voluptatem expedita inventore earum sit repellat animi ullam aspernatur hic non excepturi esse rerum quos consectetur!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, neque omnis libero eveniet facere
+                        voluptatem expedita inventore earum sit repellat animi ullam aspernatur hic non excepturi esse
+                        rerum quos consectetur!</p>
                 </div>
             </div>
         </div>
     </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        
+    </section>
+    <h1 id="h1Projeto" >Projetos</h1>
+    <section class="main">
+        <a name='projetos'></a>
+        <div class="wrap wrap--1">
+            <div id="projeto1" class="container container--1">
+                <p>Projeto: <br> Tic Tac Toe</p>
+            </div>
+          </div>
 
+          <div class="wrap wrap--2">
+            <div id="projeto2" class="container container--1">
+                <p>Projeto: <br> Calculadora</p>
+            </div>
+          </div>
+
+          <div class="wrap wrap--3">
+            <div id="projeto3" class="container container--1">
+              <p>Projeto: <br> Gerador de senha</p>
+            </div>
+          </div>
+      </section>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script src="anime.min.js"></script>
 </body>
 
 </html>

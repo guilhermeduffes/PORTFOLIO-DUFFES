@@ -42,3 +42,10 @@ playBtn.addEventListener('mouseleave', function () {
   heartbeat.currentTime = 0;
 }, false);
 
+https://owlcarousel2.github.io/OwlCarousel2/
+
+https://animejs.com
+
+https://threejs.org
+
+https://swiperjs.com/get-started

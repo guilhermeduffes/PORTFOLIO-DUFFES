@@ -6,6 +6,12 @@ const frases = ['Hey! Im Duffes.']
 // var playBtn = document.getElementById('play')
 // var heartbeat = document.getElementById('heartbeat')
 
+const AudioContext = window.AudioContext || 
+window.webkitAudioContext;
+
+const audioContext = new AudioContext();
+console.log(audioContext)
+
 var i = 0
 var j = 0
 var frases2 = []

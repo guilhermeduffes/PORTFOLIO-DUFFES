@@ -256,10 +256,6 @@ main {
 
 }
 
-.projetos {
-    /* border: 1px solid orchid; */
-}
-
 .main {
     display: flex;
     flex-wrap: wrap;
